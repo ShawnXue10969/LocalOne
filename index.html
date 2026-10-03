@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LocalOne</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Link to css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-lo sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Local<span>One</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Browse events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-event.html">Start fundraising</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">My campaign</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2" role="search">
+            <input
+              class="form-control rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-lo-primary" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero-lo py-5">
+      <div class="container py-lg-4">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1>Big hearts. Small suburbs.</h1>
+            <p class="lead mt-3 mb-4">
+              LocalOne helps Queensland's community groups. Sports clubs, school
+              P&amp;Cs, lifesaving clubs and more! Raise funds through local
+              events. Find a fundraiser near you, register your interest, and
+              chip in.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="events.html" class="btn btn-lo-donate btn-lg"
+                >Find an event near you</a
+              >
+              <a
+                href="create-event.html"
+                class="btn btn-lo-outline-light btn-lg"
+                >Start fundraising</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block text-center">
+            <img
+              src="https://placehold.co/600x400/f26b4e/fff"
+              class="img-fluid rounded-4"
+              alt="Locals taking part in a community fun run"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- How LocalOne works -->
+    <section class="py-5">
+      <div class="container text-center">
+        <p class="section-eyebrow mb-1">How LocalOne works</p>
+        <h2 class="mb-5">Three steps to support your community</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="step-circle">🔎</div>
+            <h5>Find an event</h5>
+            <p class="text-muted">Browse fundraisers by suburb or category.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="step-circle">🙋</div>
+            <h5>Register interest</h5>
+            <p class="text-muted">
+              Let organisers know you're coming so they're prepared.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="step-circle">💛</div>
+            <h5>Donate</h5>
+            <p class="text-muted">
+              Give to the event or sponsor an individual participant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Happening near you -->
+    <section class="py-5 section-alt">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-end mb-4"
+        >
+          <div>
+            <p class="section-eyebrow mb-1">Featured fundraisers</p>
+            <h2 class="mb-0">Happening near you</h2>
+          </div>
+          <a href="events.html" class="btn btn-lo-outline mt-2"
+            >See all events</a
+          >
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card card-event">
+              <img
+                src="https://placehold.co/400x240/0e7c6b/fff"
+                class="card-img-top"
+                alt="Wynnum Sharks pie drive"
+              />
+              <div class="card-body">
+                <div class="d-flex gap-2 mb-2">
+                  <span class="badge-suburb">Wynnum</span>
+                  <span class="badge-category">Sport</span>
+                </div>
+                <h5 class="card-title">Pie Drive &amp; Family Fun Day</h5>
+                <p class="org-name mb-2">Wynnum Sharks Club</p>
+                <div class="progress progress-lo mb-1">
+                  <div class="progress-bar w-64"></div>
+                </div>
+                <p class="raised-text mb-3">
+                  <strong>$3,200</strong> raised of $5,000 goal
+                </p>
+                <a
+                  href="event-detail.html"
+                  class="btn btn-lo-primary btn-sm w-100"
+                  >View event</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card card-event">
+              <img
+                src="https://placehold.co/400x240/f26b4e/fff"
+                class="card-img-top"
+                alt="Sunnybank trivia night"
+              />
+              <div class="card-body">
+                <div class="d-flex gap-2 mb-2">
+                  <span class="badge-suburb">Sunnybank</span>
+                  <span class="badge-category">School</span>
+                </div>
+                <h5 class="card-title">P&amp;C Trivia Night</h5>
+                <p class="org-name mb-2">Sunnybank State School P&amp;C</p>
+                <div class="progress progress-lo mb-1">
+                  <div class="progress-bar w-41"></div>
+                </div>
+                <p class="raised-text mb-3">
+                  <strong>$2,050</strong> raised of $5,000 goal
+                </p>
+                <a
+                  href="event-detail.html"
+                  class="btn btn-lo-primary btn-sm w-100"
+                  >View event</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card card-event">
+              <img
+                src="https://placehold.co/400x240/f7c948/fff"
+                class="card-img-top"
+                alt="Nudgee beach clean-up fun run"
+              />
+              <div class="card-body">
+                <div class="d-flex gap-2 mb-2">
+                  <span class="badge-suburb">Nudgee</span>
+                  <span class="badge-category">Environment</span>
+                </div>
+                <h5 class="card-title">Beach Clean-Up Fun Run</h5>
+                <p class="org-name mb-2">Nudgee Coastcare</p>
+                <div class="progress progress-lo mb-1">
+                  <div class="progress-bar w-82"></div>
+                </div>
+                <p class="raised-text mb-3">
+                  <strong>$8,200</strong> raised of $10,000 goal
+                </p>
+                <a
+                  href="event-detail.html"
+                  class="btn btn-lo-primary btn-sm w-100"
+                  >View event</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card card-event">
+              <img
+                src="https://placehold.co/400x240/5f6f6c/fff"
+                class="card-img-top"
+                alt="Community garden bake sale"
+              />
+              <div class="card-body">
+                <div class="d-flex gap-2 mb-2">
+                  <span class="badge-suburb">Nundah</span>
+                  <span class="badge-category">Community</span>
+                </div>
+                <h5 class="card-title">Winter Working Bee &amp; Bake Sale</h5>
+                <p class="org-name mb-2">Nundah Community Garden</p>
+                <div class="progress progress-lo mb-1">
+                  <div class="progress-bar w-28"></div>
+                </div>
+                <p class="raised-text mb-3">
+                  <strong>$560</strong> raised of $2,000 goal
+                </p>
+                <a
+                  href="event-detail.html"
+                  class="btn btn-lo-primary btn-sm w-100"
+                  >View event</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-5">
+      <div class="container">
+        <p class="section-eyebrow mb-1 text-center">Browse by category</p>
+        <h2 class="mb-4 text-center">What matters to you?</h2>
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-md-3">
+            <a class="tile-category" href="events.html"
+              ><span class="tile-icon">🏉</span>Sport</a
+            >
+          </div>
+          <div class="col-6 col-md-3">
+            <a class="tile-category" href="events.html"
+              ><span class="tile-icon">🏫</span>School</a
+            >
+          </div>
+          <div class="col-6 col-md-3">
+            <a class="tile-category" href="events.html"
+              ><span class="tile-icon">🌊</span>Environment</a
+            >
+          </div>
+          <div class="col-6 col-md-3">
+            <a class="tile-category" href="events.html"
+              ><span class="tile-icon">🤝</span>Community</a
+            >
+          </div>
+        </div>
+        <p class="text-center mt-4 mb-0">
+          <span class="me-2 text-muted fw-bold">Popular locations:</span>
+          <a href="events.html" class="badge-suburb text-decoration-none me-1"
+            >Wynnum</a
+          >
+          <a href="events.html" class="badge-suburb text-decoration-none me-1"
+            >Sunnybank</a
+          >
+          <a href="events.html" class="badge-suburb text-decoration-none me-1"
+            >Currumbin</a
+          >
+          <a href="events.html" class="badge-suburb text-decoration-none"
+            >Nundah</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-lo py-5 mt-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <p class="footer-brand mb-2">LocalOne</p>
+            <p class="mb-0">
+              Helping Queensland's community groups raise funds through local
+              events - one suburb at a time.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Explore</h6>
+            <ul class="list-unstyled">
+              <li><a href="events.html">Browse events</a></li>
+              <li><a href="create-event.html">Start fundraising</a></li>
+              <li><a href="#">How it works</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">About</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">About LocalOne</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Report content</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Follow</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="mb-0 small">
+          © 2026 LocalOne. A QUT student prototype, not a real fundraising platform.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

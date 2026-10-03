@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LocalOne</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Link to css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-lo sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Local<span>One</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Browse events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-event.html">Start fundraising</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">My campaign</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2" role="search">
+            <input
+              class="form-control rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-lo-primary" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container py-4">
+      <h1 class="mb-1">Browse events</h1>
+      <p class="text-muted mb-4">Find a community fundraiser near you.</p>
+
+      <!-- search + filters -->
+      <div class="filter-bar p-3 p-md-4 mb-4">
+        <!-- Keyword search -->
+        <div class="row g-2 mb-3">
+          <div class="col-md-9">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search by keyword"
+              aria-label="Search events by keyword"
+            />
+          </div>
+          <div class="col-md-3 d-grid">
+            <button type="button" class="btn btn-lo-primary">Search</button>
+          </div>
+        </div>
+
+        <!-- Category filter -->
+        <p class="mb-1 fw-bold small text-muted">Category</p>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <button type="button" class="filter-pill active">All</button>
+          <button type="button" class="filter-pill">Sport</button>
+          <button type="button" class="filter-pill">School</button>
+          <button type="button" class="filter-pill">Environment</button>
+          <button type="button" class="filter-pill">Community</button>
+        </div>
+
+        <!-- Suburb filter -->
+        <div class="row g-2 align-items-end">
+          <div class="col-md-4">
+            <label
+              class="form-label mb-1 fw-bold small text-muted"
+              for="suburbFilter"
+              >Suburb or region</label
+            >
+            <select class="form-select" id="suburbFilter">
+              <option selected>All locations</option>
+              <option>Wynnum</option>
+              <option>Sunnybank</option>
+              <option>Nudgee</option>
+              <option>Nundah</option>
+              <option>Gold Coast</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label mb-1 fw-bold small text-muted" for="sortBy"
+              >Sort by</label
+            >
+            <select class="form-select" id="sortBy">
+              <option selected>Soonest first</option>
+              <option>Closest to goal</option>
+              <option>Newest</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <span class="badge-suburb">4 events found</span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card card-event">
+            <img
+              src="https://placehold.co/400x240/0e7c6b/fff"
+              class="card-img-top"
+              alt="Wynnum Sharks pie drive"
+            />
+            <div class="card-body">
+              <div class="d-flex gap-2 mb-2">
+                <span class="badge-suburb">Wynnum</span>
+                <span class="badge-category">Sport</span>
+              </div>
+              <h5 class="card-title">Pie Drive &amp; Family Fun Day</h5>
+              <p class="org-name mb-2">
+                Wynnum Sharks Club · 5 Sep 2026
+              </p>
+              <div class="progress progress-lo mb-1">
+                <div class="progress-bar w-64"></div>
+              </div>
+              <p class="raised-text mb-3">
+                <strong>$3,200</strong> raised of $5,000 goal
+              </p>
+              <a
+                href="event-detail.html"
+                class="btn btn-lo-primary btn-sm w-100"
+                >View event</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card card-event">
+            <img
+              src="https://placehold.co/400x240/f26b4e/fff"
+              class="card-img-top"
+              alt="Sunnybank trivia night"
+            />
+            <div class="card-body">
+              <div class="d-flex gap-2 mb-2">
+                <span class="badge-suburb">Sunnybank</span>
+                <span class="badge-category">School</span>
+              </div>
+              <h5 class="card-title">P&amp;C Trivia Night</h5>
+              <p class="org-name mb-2">
+                Sunnybank State School P&amp;C · 12 Sep 2026
+              </p>
+              <div class="progress progress-lo mb-1">
+                <div class="progress-bar w-41"></div>
+              </div>
+              <p class="raised-text mb-3">
+                <strong>$2,050</strong> raised of $5,000 goal
+              </p>
+              <a
+                href="event-detail.html"
+                class="btn btn-lo-primary btn-sm w-100"
+                >View event</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card card-event">
+            <img
+              src="https://placehold.co/400x240/f7c948/fff"
+              class="card-img-top"
+              alt="Nudgee beach clean-up fun run"
+            />
+            <div class="card-body">
+              <div class="d-flex gap-2 mb-2">
+                <span class="badge-suburb">Nudgee</span>
+                <span class="badge-category">Environment</span>
+              </div>
+              <h5 class="card-title">Beach Clean-Up Fun Run</h5>
+              <p class="org-name mb-2">Nudgee Coastcare · 19 Sep 2026</p>
+              <div class="progress progress-lo mb-1">
+                <div class="progress-bar w-82"></div>
+              </div>
+              <p class="raised-text mb-3">
+                <strong>$8,200</strong> raised of $10,000 goal
+              </p>
+              <a
+                href="event-detail.html"
+                class="btn btn-lo-primary btn-sm w-100"
+                >View event</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card card-event">
+            <img
+              src="https://placehold.co/400x240/5f6f6c/fff"
+              class="card-img-top"
+              alt="Nundah community garden bake sale"
+            />
+            <div class="card-body">
+              <div class="d-flex gap-2 mb-2">
+                <span class="badge-suburb">Nundah</span>
+                <span class="badge-category">Community</span>
+              </div>
+              <h5 class="card-title">Winter Working Bee &amp; Bake Sale</h5>
+              <p class="org-name mb-2">Nundah Community Garden · 26 Sep 2026</p>
+              <div class="progress progress-lo mb-1">
+                <div class="progress-bar w-28"></div>
+              </div>
+              <p class="raised-text mb-3">
+                <strong>$560</strong> raised of $2,000 goal
+              </p>
+              <a
+                href="event-detail.html"
+                class="btn btn-lo-primary btn-sm w-100"
+                >View event</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <nav class="mt-4" aria-label="Event pages">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <span class="page-link">Previous</span>
+          </li>
+          <li class="page-item active"><span class="page-link">1</span></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-lo py-5 mt-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <p class="footer-brand mb-2">LocalOne</p>
+            <p class="mb-0">
+              Helping Queensland's community groups raise funds through local
+              events - one suburb at a time.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Explore</h6>
+            <ul class="list-unstyled">
+              <li><a href="events.html">Browse events</a></li>
+              <li><a href="create-event.html">Start fundraising</a></li>
+              <li><a href="#">How it works</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">About</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">About LocalOne</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Report content</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Follow</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="mb-0 small">
+          © 2026 LocalOne. A QUT student prototype, not a real fundraising
+          platform.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

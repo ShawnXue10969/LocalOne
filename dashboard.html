@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LocalOne</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Link to css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-lo sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Local<span>One</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Browse events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-event.html">Start fundraising</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">My campaign</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2" role="search">
+            <input
+              class="form-control rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-lo-primary" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container py-4">
+      <!-- campaign overview -->
+      <div
+        class="d-flex flex-wrap gap-2 align-items-center mb-1"
+      >
+        <h1 class="mb-0">Beach Clean-Up Fun Run</h1>
+        <span class="badge badge-status-active">Active</span>
+      </div>
+      <p class="text-muted">
+        Nudgee Coastcare · Saturday 19 September 2026 · Nudgee Beach
+      </p>
+      <p>
+        Run, jog or walk 5 km along the beach while helping collect litter along
+        the way. Funds raised will be used to buy new clean-up equipments.
+      </p>
+
+      <!-- edit button -->
+      <a href="create-event.html" class="btn btn-lo-primary mb-4"
+        >Edit event details</a
+      >
+
+      <!-- summary stat cards -->
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-lg-3">
+          <div class="stat-card p-4 text-center">
+            <p class="stat-value mb-0">$8,200</p>
+            <p class="stat-label mb-0">Total raised</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card p-4 text-center">
+            <p class="stat-value mb-0">96</p>
+            <p class="stat-label mb-0">Donations</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card p-4 text-center">
+            <p class="stat-value mb-0">54</p>
+            <p class="stat-label mb-0">Registered supporters</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card p-4 text-center">
+            <p class="stat-value mb-0">82%</p>
+            <p class="stat-label mb-0">Of $10,000 goal</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Left column -->
+        <div class="col-lg-7">
+          <!-- campaign statistics -->
+          <h4>Campaign statistics</h4>
+          <div class="stat-card p-3 mb-4">
+            <img
+              src="https://placehold.co/620x260?text=Donations+over+time+(chart)"
+              class="img-fluid rounded"
+              alt="Chart showing donations received per week"
+            />
+          </div>
+
+          <!-- donation history table -->
+          <h4>Donation history</h4>
+          <div class="table-responsive mb-4">
+            <table class="table table-lo bg-white rounded">
+              <thead>
+                <tr>
+                  <th>Donor</th>
+                  <th>Amount</th>
+                  <th>Donated to</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Megan R.</td>
+                  <td>$50</td>
+                  <td>Sarah L.</td>
+                  <td>20 Aug 2026</td>
+                </tr>
+                <tr>
+                  <td>Anonymous</td>
+                  <td>$100</td>
+                  <td>This event</td>
+                  <td>19 Aug 2026</td>
+                </tr>
+                <tr>
+                  <td>Dave</td>
+                  <td>$25</td>
+                  <td>This event</td>
+                  <td>18 Aug 2026</td>
+                </tr>
+                <tr>
+                  <td>Zoe</td>
+                  <td>$40</td>
+                  <td>Tom K.</td>
+                  <td>17 Aug 2026</td>
+                </tr>
+                <tr>
+                  <td>Sam</td>
+                  <td>$75</td>
+                  <td>This event</td>
+                  <td>16 Aug 2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- registered supporters table -->
+          <h4>Registered supporters</h4>
+          <div class="table-responsive">
+            <table class="table table-lo bg-white rounded">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Registered on</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Megan R.</td>
+                  <td>20 Aug 2026</td>
+                </tr>
+                <tr>
+                  <td>The Wang family</td>
+                  <td>18 Aug 2026</td>
+                </tr>
+                <tr>
+                  <td>Zoe</td>
+                  <td>17 Aug 2026</td>
+                </tr>
+                <tr>
+                  <td>Leigh</td>
+                  <td>15 Aug 2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-lg-5">
+          <!-- campaign status control -->
+          <div class="side-panel p-4 mb-4">
+            <h4>Campaign status</h4>
+            <p class="text-muted small">
+              Paused campaigns stay visible but cannot receive donations.
+            </p>
+            <label class="form-label" for="campaignStatus">Set status</label>
+            <select class="form-select" id="campaignStatus">
+              <option selected>Active</option>
+              <option>Paused</option>
+              <option>Completed</option>
+            </select>
+            <button type="button" class="btn btn-lo-primary w-100 mt-3">
+              Update status
+            </button>
+          </div>
+
+          <!-- post an update -->
+          <div class="side-panel p-4">
+            <h4>Post an update</h4>
+            <p class="text-muted small">Updates appear on your event page.</p>
+
+            <label class="form-label" for="updateTitle">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="updateTitle"
+              placeholder="Post title"
+            />
+
+            <label class="form-label mt-3" for="updateBody">Update</label>
+            <textarea
+              class="form-control"
+              id="updateBody"
+              rows="4"
+              placeholder="Share news with your supporters"
+            ></textarea>
+
+            <label class="form-label mt-3" for="updateImage"
+              >Add an image</label
+            >
+            <input type="file" class="form-control" id="updateImage" />
+
+            <button type="button" class="btn btn-lo-donate w-100 mt-3">
+              Publish update
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-lo py-5 mt-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <p class="footer-brand mb-2">LocalOne</p>
+            <p class="mb-0">
+              Helping Queensland's community groups raise funds through local
+              events - one suburb at a time.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Explore</h6>
+            <ul class="list-unstyled">
+              <li><a href="events.html">Browse events</a></li>
+              <li><a href="create-event.html">Start fundraising</a></li>
+              <li><a href="#">How it works</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">About</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">About LocalOne</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Report content</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Follow</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="mb-0 small">
+          © 2026 LocalOne. A QUT student prototype, not a real fundraising
+          platform.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

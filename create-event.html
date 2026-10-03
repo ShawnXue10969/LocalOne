@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LocalOne</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Link to css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-lo sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Local<span>One</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Browse events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-event.html">Start fundraising</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">My campaign</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2" role="search">
+            <input
+              class="form-control rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-lo-primary" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Create event form. The same page is reused
+             with the heading "Edit event", fields pre-filled. -->
+          <h1 class="mb-1">Create your event</h1>
+          <p class="text-muted mb-4">
+            Fill in the details below - your event will appear on LocalOne once
+            approved by our team.
+          </p>
+
+          <div class="side-panel p-4 mb-4">
+            <h4 class="mb-3">About your organisation</h4>
+
+            <label class="form-label" for="orgName"
+              >Organisation or your name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="orgName"
+              placeholder="Name"
+            />
+
+            <label class="form-label mt-3" for="orgType">Organiser type</label>
+            <select class="form-select" id="orgType">
+              <option selected>Community group</option>
+              <option>School</option>
+              <option>Sports club</option>
+              <option>Individual</option>
+            </select>
+
+            <label class="form-label mt-3" for="orgAbout"
+              >About the organiser</label
+            >
+            <textarea
+              class="form-control"
+              id="orgAbout"
+              rows="3"
+              placeholder="Tell supporters who you are and what the funds will be used for"
+            ></textarea>
+          </div>
+
+          <div class="side-panel p-4 mb-4">
+            <h4 class="mb-3">Event details</h4>
+
+            <label class="form-label" for="eventTitle">Event title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="eventTitle"
+              placeholder="Title"
+            />
+
+            <label class="form-label mt-3" for="eventDesc"
+              >Event description</label
+            >
+            <textarea
+              class="form-control"
+              id="eventDesc"
+              rows="4"
+              placeholder="What happens at your event?"
+            ></textarea>
+
+            <div class="row g-3 mt-0">
+              <div class="col-md-6">
+                <label class="form-label" for="eventCategory">Category</label>
+                <select class="form-select" id="eventCategory">
+                  <option selected>Sport</option>
+                  <option>School</option>
+                  <option>Environment</option>
+                  <option>Community</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="eventSuburb">Suburb</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="eventSuburb"
+                  placeholder="Suburb"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="eventDate">Date</label>
+                <input type="date" class="form-control" id="eventDate" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="eventTime">Start time</label>
+                <input type="time" class="form-control" id="eventTime" />
+              </div>
+            </div>
+
+            <label class="form-label mt-3" for="eventLocation"
+              >Event location</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="eventLocation"
+              placeholder="Location"
+            />
+
+            <label class="form-label mt-3" for="eventImage"
+              >Event image or banner</label
+            >
+            <input type="file" class="form-control" id="eventImage" />
+          </div>
+
+          <div class="side-panel p-4 mb-4">
+            <h4 class="mb-3">Fundraising</h4>
+
+            <label class="form-label" for="eventGoal"
+              >Fundraising goal ($)</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="eventGoal"
+              placeholder="e.g. 10000"
+            />
+
+            <label class="form-label mt-3" for="participants"
+              >Featured participants (optional)</label
+            >
+            <textarea
+              class="form-control"
+              id="participants"
+              rows="2"
+              placeholder="One per line, e.g. Sarah L. - running her first 5 km"
+            ></textarea>
+            <p class="text-muted small mt-1 mb-0">
+              Supporters will be able to donate directly to these participants.
+            </p>
+          </div>
+
+          <div class="d-grid gap-2 d-md-flex">
+            <button type="button" class="btn btn-lo-donate btn-lg">
+              Submit for approval
+            </button>
+            <button type="button" class="btn btn-lo-outline btn-lg">
+              Save draft
+            </button>
+          </div>
+          <p class="text-muted small mt-2">
+            New events are reviewed by LocalOne administrators before appearing
+            on the site.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-lo py-5 mt-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <p class="footer-brand mb-2">LocalOne</p>
+            <p class="mb-0">
+              Helping Queensland's community groups raise funds through local
+              events - one suburb at a time.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Explore</h6>
+            <ul class="list-unstyled">
+              <li><a href="events.html">Browse events</a></li>
+              <li><a href="create-event.html">Start fundraising</a></li>
+              <li><a href="#">How it works</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">About</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">About LocalOne</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Report content</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Follow</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="mb-0 small">
+          © 2026 LocalOne. A QUT student prototype, not a real fundraising
+          platform.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

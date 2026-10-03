@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LocalOne</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Link to css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-lo sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Local<span>One</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Browse events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-event.html">Start fundraising</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">My campaign</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2" role="search">
+            <input
+              class="form-control rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-lo-primary" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container py-4">
+      <!-- Banner -->
+      <img
+        src="https://placehold.co/1100x320/f7c948/fff?text=Beach+Clean-Up+Fun+Run"
+        class="event-banner mb-4"
+      />
+
+      <div class="row g-4">
+        <!-- Left column: event information -->
+        <div class="col-lg-7">
+          <div class="d-flex gap-2 mb-2">
+            <span class="badge-suburb">Nudgee</span>
+            <span class="badge-category">Environment</span>
+          </div>
+          <h1>Beach Clean-Up Fun Run</h1>
+          <p class="text-muted">
+            Saturday 19 September 2026, 7:00 AM · Nudgee Beach, Brisbane
+          </p>
+
+          <!-- organiser description -->
+          <h4 class="mt-4">About the organiser</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            dignissimos impedit ad sequi. Sint rem voluptatem accusantium
+            consequatur ad nesciunt repellat quasi perferendis, omnis eligendi
+            minima necessitatibus unde impedit exercitationem!
+          </p>
+
+          <h4 class="mt-4">About this event</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            pariatur consectetur dignissimos maiores qui cum eaque molestiae
+            numquam reiciendis rem quis animi, at, magni adipisci consequatur.
+            At harum eum quam?
+          </p>
+
+          <!-- featured participants -->
+          <h4 class="mt-4">Featured participants</h4>
+          <ul class="list-group mb-4">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Sarah L. - running her first 5&nbsp;km
+              <a href="#donate" class="btn btn-lo-donate btn-sm">Sponsor</a>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Tom K.
+              <a href="#donate" class="btn btn-lo-donate btn-sm">Sponsor</a>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              The Wang family - walking together
+              <a href="#donate" class="btn btn-lo-donate btn-sm">Sponsor</a>
+            </li>
+          </ul>
+
+          <!-- updates/posts from the organiser -->
+          <h4 class="mt-4">Updates from the organiser</h4>
+          <div class="card mb-3">
+            <div class="card-body">
+              <p class="mb-1 fw-bold">
+                Sausage sizzle confirmed!
+                <span class="text-muted fw-normal small">· 14 Aug 2026</span>
+              </p>
+              <p class="mb-0">
+                Thanks to Nudgee Butchery for donating all snags for the finish
+                line BBQ.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="mb-1 fw-bold">
+                Halfway to our goal
+                <span class="text-muted fw-normal small">· 2 Aug 2026</span>
+              </p>
+              <p class="mb-1">
+                We've passed $5,000 in just three weeks. Photo from last month's
+                clean-up below.
+              </p>
+              <img
+                src="https://placehold.co/600x200/0e7c6b/fff?text=Clean-up+crew+photo"
+                class="img-fluid rounded"
+                alt="Volunteers at last month's beach clean-up"
+              />
+            </div>
+          </div>
+
+          <!-- donor list -->
+          <h4>Recent donations</h4>
+          <ul class="list-group mb-4">
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between">
+                <span class="fw-bold">Megan R.</span
+                ><span class="fw-bold">$50</span>
+              </div>
+              <span class="text-muted small">"So proud of you."</span>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between">
+                <span class="fw-bold">Anonymous</span
+                ><span class="fw-bold">$100</span>
+              </div>
+              <span class="text-muted small">"Very good."</span>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between">
+                <span class="fw-bold">Dave</span
+                ><span class="fw-bold">$25</span>
+              </div>
+              <span class="text-muted small">"Yeah what they said."</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-lg-5">
+          <!-- progress bar -->
+          <div class="side-panel p-4 mb-4">
+            <div class="progress progress-lo mb-2">
+              <div class="progress-bar w-82"></div>
+            </div>
+            <p class="raised-text mb-3">
+              <strong>$8,200</strong> raised of $10,000 goal · 96 donations
+            </p>
+            <a href="#donate" class="btn btn-lo-donate w-100 mb-2"
+              >Donate now</a
+            >
+            <a href="#register" class="btn btn-lo-outline w-100"
+              >Register interest</a
+            >
+          </div>
+
+          <!-- donation form -->
+          <div class="side-panel p-4 mb-4" id="donate">
+            <h4>Make a donation</h4>
+
+            <label class="form-label mt-2" for="donateTo">Donate to</label>
+            <select class="form-select" id="donateTo">
+              <option selected>This event: Beach Clean-Up Fun Run</option>
+              <option>Sarah L.</option>
+              <option>Tom K.</option>
+              <option>The Wang family</option>
+            </select>
+
+            <p class="form-label mt-3 mb-1">Amount</p>
+            <div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="amount"
+                  id="amt10"
+                />
+                <label class="form-check-label" for="amt10">$10</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="amount"
+                  id="amt25"
+                  checked
+                />
+                <label class="form-check-label" for="amt25">$25</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="amount"
+                  id="amt50"
+                />
+                <label class="form-check-label" for="amt50">$50</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="amount"
+                  id="amt100"
+                />
+                <label class="form-check-label" for="amt100">$100</label>
+              </div>
+            </div>
+            <label class="form-label mt-2" for="customAmount"
+              >Or a custom amount</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="customAmount"
+              placeholder="$"
+            />
+
+            <label class="form-label mt-3" for="donorName">Your name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="donorName"
+              placeholder="Full name"
+            />
+
+            <label class="form-label mt-3" for="donorEmail">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="donorEmail"
+              placeholder="you@email.com"
+            />
+
+            <label class="form-label mt-3" for="donorPhone"
+              >Phone (optional)</label
+            >
+            <input
+              type="tel"
+              class="form-control"
+              id="donorPhone"
+              placeholder="04xx xxx xxx"
+            />
+
+            <label class="form-label mt-3" for="payMethod"
+              >Payment method</label
+            >
+            <select class="form-select" id="payMethod">
+              <option selected>Credit / debit card</option>
+              <option>PayPal</option>
+              <option>Bank transfer</option>
+            </select>
+
+            <label class="form-label mt-3" for="donorMessage"
+              >Message (shown with your donation)</label
+            >
+            <textarea
+              class="form-control"
+              id="donorMessage"
+              rows="2"
+              placeholder="Leave a message of support"
+            ></textarea>
+
+            <div class="form-check mt-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="anonDonation"
+              />
+              <label class="form-check-label" for="anonDonation"
+                >Make my donation anonymous</label
+              >
+            </div>
+
+            <button type="button" class="btn btn-lo-donate w-100 mt-3">
+              Donate
+            </button>
+          </div>
+
+          <!-- register interest form -->
+          <div class="side-panel p-4" id="register">
+            <h4>Register interest</h4>
+            <p class="text-muted small">
+              Let the organisers know you're coming.
+            </p>
+
+            <label class="form-label" for="regName">Your name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="regName"
+              placeholder="Full name"
+            />
+
+            <label class="form-label mt-3" for="regEmail">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="regEmail"
+              placeholder="you@email.com"
+            />
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" id="regDonate" />
+              <label class="form-check-label" for="regDonate"
+                >I'd also like to make a donation</label
+              >
+            </div>
+
+            <button type="button" class="btn btn-lo-primary w-100 mt-3">
+              Register
+            </button>
+            <p class="text-muted small mt-2 mb-0">
+              You'll receive a confirmation email with event details.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-lo py-5 mt-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <p class="footer-brand mb-2">LocalOne</p>
+            <p class="mb-0">
+              Helping Queensland's community groups raise funds through local
+              events — one suburb at a time.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Explore</h6>
+            <ul class="list-unstyled">
+              <li><a href="events.html">Browse events</a></li>
+              <li><a href="create-event.html">Start fundraising</a></li>
+              <li><a href="#">How it works</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">About</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">About LocalOne</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Report content</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white">Follow</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr" />
+        <p class="mb-0 small">
+          © 2026 LocalOne. A QUT student prototype, not a real fundraising
+          platform.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
